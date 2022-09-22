@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Notifications page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+            <div class="notificacions-header">
+                <div class="notifications-info-container">
+                    <span class="notifications-info-title">Notificacions</span>
+                    <span class="notifications-counter"></span>
+                </div>
+                <div>
+                    <span class="mark-all-btn"> Mark all as read</span>
+                </div>
+            </div>
+            <div class="notifications-box">
+                <div class="notification unread">
+                    <img class="notification-img" src="./assets/images/avatar-mark-webber.webp"
+                        alt="Mark Webber Profile Image">
+                    <div class="notification-info">
+                        <div>
+                            <span class="friend-name">Mark Webber</span>
+                            <span class="activity"> Reacted to your recent post</span>
+                            <span class="platform">
+                                My First tournament today!
+                                <span class="notification-active"></span>
+                            </span>
+                        </div>
+                        <small>1m ago</small>
+                    </div>
+                </div>
+                <div class="notification unread">
+                    <img class="notification-img" src="./assets/images/avatar-angela-gray.webp"
+                        alt="Mark Webber Profile Image">
+                    <div class="notification-info">
+                        <div>
+                            <span class="friend-name">Angela Gray</span>
+                            <span class="activity"> followed you</span>
+                            <span class="platform">
+                                <span class="notification-active"></span>
+                            </span>
+                        </div>
+                        <small>5m ago</small>
+                    </div>
+                </div>
+                <div class="notification unread">
+                    <img class="notification-img" src="./assets/images/avatar-jacob-thompson.webp"
+                        alt="Mark Webber Profile Image">
+                    <div class="notification-info">
+                        <div>
+                            <span class="friend-name">Jacob Thompson</span>
+                            <span class="activity">has joined your group</span>
+                            <span class="platform">
+                                Chess Club
+                                <span class="notification-active"></span>
+                            </span>
+                        </div>
+                        <small>1 day ago</small>
+                    </div>
+                </div>
+                <div class="notification">
+                    <img class="notification-img" src="./assets/images/avatar-rizky-hasanuddin.webp"
+                        alt="Mark Webber Profile Image">
+                    <div>
+                        <div class="notification-info">
+                            <div>
+                                <span class="friend-name">Rizky Hasanuddin</span>
+                                <span class="activity">sent you a private message</span>
+                                <span class="platform">
+                                    <span class="notification-active"></span>
+                                </span>
+                            </div>
+                            <small>5 days ago</small>
+                        </div>
+                        <div class="messages-box">
+                            Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+                            I'm already having lots of fun and improving my game. 
+                        </div>
+                    </div>
+                </div>
+                <div class="notification">
+                    <img class="notification-img" src="./assets/images/avatar-kimberly-smith.webp"
+                        alt="Mark Webber Profile Image">
+                    <div class="picture-box">
+                        <div class="notification-info">
+                            <div class="container-picture">
+                                <div>
+                                    <span class="friend-name">Kimberly Smith</span>
+                                    <span class="activity">commented on your picture</span>
+                                    <span class="platform">
+                                        <span class="notification-active"></span>
+                                    </span>
+                                    <small>1 week ago</small>
+                                </div>
+                                <img class="picture-chess" src="assets/images/image-chess.webp" alt="Chess Picture">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="notification">
+                    <img class="notification-img" src="./assets/images/avatar-nathan-peterson.webp"
+                        alt="Mark Webber Profile Image">
+                    <div class="notification-info">
+                        <div>
+                            <span class="friend-name">Nathan Peterson</span>
+                            <span class="activity">reacted to your recent post</span>
+                            <span class="platform">
+                                5 end-game strategies to increase your win rate
+                                <span class="notification-active"></span>
+                            </span>
+                        </div>
+                        <small>2 weeks ago</small>
+                    </div>
+                </div>
+                <div class="notification">
+                    <img class="notification-img" src="./assets/images/avatar-anna-kim.webp"
+                        alt="Mark Webber Profile Image">
+                    <div class="notification-info">
+                        <div>
+                            <span class="friend-name">Anna Kim</span>
+                            <span class="activity">Left the group</span>
+                            <span class="platform">
+                                Chess Club
+                                <span class="notification-active"></span>
+                            </span>
+                        </div>
+                        <small>2 weeks ago</small>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="https://www.frontendmentor.io/profile/oscarenriqq">Oscar Molinar</a>.
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

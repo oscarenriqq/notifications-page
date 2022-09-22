@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Fraunces', serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Outfit', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  background-color: hsl(211, 68%, 94%);
+}
+
+main {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+}
+
+.container {
+  width: 40rem;
+  /* height: 45rem; */
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 2.3rem;
+}
+
+.notificacions-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.notifications-info-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.notifications-counter {
+  width: 1.5rem;
+  height: 1.3rem;
+  background-color: hsl(219, 85%, 26%);
+  line-height: 1.3rem;
+  text-align: center;
+  margin-left: 0.7rem;
+  border-radius: 0.3rem;
+  color: white;
+}
+
+.notifications-info-title {
+  font-weight: 800;
+}
+
+.mark-all-btn {
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.mark-all-btn:hover {
+  color: hsl(219, 85%, 26%);
+}
+
+/* NOTIFICATIONS */
+
+
+.notification > * {
+    pointer-events: none;
+}
+
+.notification {
+  display: flex;
+  margin-top: 8px;
+  background-color: white;
+  border-radius: 0.3rem;
+  padding: 0.6rem;
+  cursor: pointer;
+  transition: .2s ease;
+}
+
+.notification.unread {
+  background-color: hsl(211, 68%, 94%);
+}
+
+.notification:first-child {
+  margin-top: 27px;
+}
+
+.notification-img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.notification-info,
+.messages-box {
+  margin-left: 1rem;
+}
+
+.notification-info small {
+  color: hsl(219, 14%, 63%);
+}
+
+.friend-name,
+.platform {
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.activity {
+  font-size: 0.9rem;
+  color: hsl(219, 12%, 42%);
+}
+
+span.notification-active {
+  width: 7px;
+  height: 7px;
+  background-color: hsl(1, 90%, 64%);
+  display: block;
+  border-radius: 100%;
+  display: inline-block;
+  margin-left: 5px;
+  display: none;
+}
+
+.notification.unread .notification-active {
+  display: inline-block;
+}
+
+.messages-box {
+  margin-top: 1rem;
+  width: 100%;
+  border: 1px solid hsl(211, 68%, 94%);
+  padding: 1rem;
+  border-radius: 0.3rem;
+  color: hsl(219, 12%, 42%);
+}
+
+.picture-chess {
+  width: 2rem;
+}
+
+.container-picture {
+  display: flex;
+  justify-content: space-between;
+}
+
+.picture-box {
+  width: 100%;
+}
+
+.container-picture small {
+  display: block;
+}
